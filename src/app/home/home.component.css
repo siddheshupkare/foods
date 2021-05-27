@@ -1,0 +1,28 @@
+.grid
+{
+  display: grid;
+  place-items: center;
+}
+fieldset
+{
+  display: grid;
+  background-color:beige;
+  height: 100%;
+  width: 60%;
+  place-items: center;
+
+}
+.mat-divider {
+  border-top-color: black;
+}
+
+.myinput
+{
+  border-color: black;
+  border-radius: 10px;
+  height: 20px;
+}
+
+.mat-form-field .mat-form-field-outline {
+  color: black;
+}

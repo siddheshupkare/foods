@@ -1,0 +1,25 @@
+<div class="grid">
+  <h1>Nutrition Web</h1>
+  <h3><a routerLink="recipe">Click For Recipe</a></h3>
+
+      <fieldset>
+        <h1>Find Health Labels</h1>
+
+
+      <input class="myinput" matInput type="text" [(ngModel)]="value">
+
+    <button mat-raised-button color="primary" (click)="onSubmit()">Find</button>
+    <h1>Health Labels:</h1>
+    <div >
+      <mat-list *ngFor="let item of mydata.healthLabels">
+        <mat-list-item style="color: black;">{{item}}</mat-list-item>
+        <mat-divider></mat-divider>
+
+      </mat-list>
+
+    </div>
+    </fieldset>
+
+
+
+</div>

@@ -1,0 +1,14 @@
+<div class="grid">
+  <h1>Nutrition Web</h1>
+    <fieldset>
+      <h1>Recipe</h1>
+        <input class="myinput" matInput type="text" [(ngModel)]="food">
+      <button mat-raised-button color="primary" (click)="onSubmit2()">Find</button>
+      <h1>List of Recipe:</h1>
+      <div *ngFor="let item of recipeData">
+        <h1>{{item.recipe.label}}</h1>
+        <mat-divider></mat-divider>
+      </div>
+      </fieldset>
+
+</div>
